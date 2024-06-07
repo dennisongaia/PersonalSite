@@ -1,7 +1,7 @@
 import About from "../components/About/About";
-import Experience from "../components/Experience/Experience";
-import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
+import Resume from "../components/Resume/Resume";
+import Work from "../components/Work/Work";
+import Play from "../components/Play/Play";
 
 export const navigationData = [
     {
@@ -10,18 +10,18 @@ export const navigationData = [
         element: <About/>
     },
     {
-        title: "Experience",
-        path: "/experience",
-        element: <Experience/>
+        title: "Resume",
+        path: "/resume",
+        element: <Resume/>
     },
     {
-        title: "Projects",
-        path: "/projects",
-        element: <Projects/>
+        title: "Work",
+        path: "/work",
+        element: <Work/>
     },
     {
-        title: "Contact",
-        path: "/contact",
-        element: <Contact/>
+        title: "Play",
+        path: "/play",
+        element: <Play/>
     },
 ]
