@@ -1,0 +1,46 @@
+span.gaia-title {
+    position: relative;
+    z-index: 10
+}
+
+@media (min-width: 768px) {
+    span.gaia-title {
+        display:block
+    }
+}
+
+h2.gaia-title {
+    line-height: 1.2;
+    padding-bottom: clamp(1rem,6%,3rem)
+}
+
+.stars.gaia-title {
+    position: absolute;
+    transform: scale(.5)
+}
+
+@media (min-width: 768px) {
+    .stars.gaia-title {
+        transform:scale(1)
+    }
+}
+
+.stars.left.gaia-title {
+    left: -3rem;
+    bottom: -5rem;
+}
+
+.stars.right.gaia-title {
+    right: -5rem;
+    top: -2rem
+}
+
+.holder.gaia-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.holder-content.gaia-title {
+    position: relative
+}

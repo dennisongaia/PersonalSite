@@ -1,16 +1,24 @@
 import './App.css';
 import {navigationData} from "./constants/constants";
 
-import {BrowserRouter as Router, Route, Routes, Link, useLocation} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import NavBar from "./components/Nav/NavBar";
 import ColorWash from "./components/ColorWash/ColorWash";
 
 function App() {
-    const location = useLocation();
-
     return (
-            <div className="w-screen h-screen z-40 bg-[var(--color-gradient)]">
-                <ColorWash />
-                <div className="w-screen h-screen z-30">
+        <>
+            <header className="fixed z-[var(--zindex-nav)] top-0 right-0 left-0 w-full py-0 px-4">
+                <NavBar/>
+            </header>
+            <div className="block w-screen h-screen left-0 right-0 bottom-0 top-0 absolute z-[var(--zindex-base)] overflow-hidden opacity-80">
+                <div className="absolute z-[var(--zindex-2)] bg-[var(--color-gradient)] left-0 top-0 w-full h-full"/>
+                <div className="w-full h-full absolute left-0 top-0 z-[var(--zindex-base)]">
+                    <ColorWash/>
+                </div>
+            </div>
+            <main className="relative z-[var(--zindex-content)] h-full w-full">
+                <div className="relative z-10 w-full h-full">
                 <Routes>
                     {navigationData.map((item) => (
                         <Route
@@ -20,29 +28,18 @@ function App() {
                         />
                     ))}
                 </Routes>
-                <header className="fixed z-20 top-0 right-0 left-0 w-full py-0 px-4">
-                    <nav className="flex justify-center align-middle max-w-[1600px] mt-5 mx-0 mb-auto relative z-20">
-                        <ul className="flex list-none m-0 p-[calc(1.25rem) - 10px] rounded transition-all">
-                            {navigationData.map((item) => (
-                                <li className="flex relative">
-                                    <Link to={item.path} className={`py-1.5 px-4 my-0 mx-1 text-sm rounded transition-all
-                                    flex align-middle text-[var(--color-text-secondary)] md:my-0 md:mx-1 md:py-1.5 md:px-5
-                                    md:text-base ${location.pathname === item.path ? 'rounded-3xl bg-[var(--color-white50)]' : ''}`}>
-                                        {item.title}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                </header>
                 </div>
-            </div>
+            </main>
+            <footer className="">
+
+            </footer>
+        </>
     );
 }
 
 const Root = () => (
     <Router>
-        <App />
+        <App/>
     </Router>
 )
 

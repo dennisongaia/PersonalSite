@@ -1,0 +1,35 @@
+h1.title-element {
+    padding: 8rem 0 3rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    h1.title-element {
+        padding: 12rem 0 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper.subtitle {
+        padding: 0 var(--16px);
+    }
+}
+.wrapper.subtitle {
+    padding: 0 var(--24px);
+    display: grid;
+    grid-template-columns: 1fr min(65ch, 100%) 1fr;
+    position: relative;
+}
+
+p.center.subtitle {
+    text-align: center;
+}
+.wrapper.subtitle>.subtitle {
+    grid-column: 2;
+}
+p.subtitle {
+    font-size: var(--font-body);
+    --_color: var(--color, var(--color-text-secondary));
+    color: var(--_color);
+    letter-spacing: -.3px;
+}

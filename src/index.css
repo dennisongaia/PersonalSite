@@ -338,6 +338,16 @@ p+h3 {
   grid-template-columns: repeat(25,1fr)
 }
 
+.grid-wrap {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .grid-wrap {
+    margin: 0 var(--64px);
+  }
+}
+
 .cards {
   padding: 0 calc(var(--24px) + 6px) calc(var(--64px) * 2)
 }
