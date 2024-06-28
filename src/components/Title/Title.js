@@ -1,5 +1,5 @@
 import React from 'react'
-import starOne from './../../assets/star-1.svg';
+import starOne from '../../assets/star-1.svg';
 
 import './Title.css'
 import './index.css';

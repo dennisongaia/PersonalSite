@@ -13,7 +13,7 @@ const getRandomIndices = (length, count) => {
 };
 
 const Collage = () => {
-    const randomIndices = getRandomIndices(collageData.length, 4); // Get 4 unique random indices
+    const randomIndices = getRandomIndices(collageData.length, 4);
     const selectedData = randomIndices.map(index => collageData[index]);
 
     return (

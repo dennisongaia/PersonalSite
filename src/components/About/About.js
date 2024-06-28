@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from "../Title/Title";
 import Card from 'react-bootstrap/Card';
-import profile from "../../assets/G.JPG";
+import profile from "../../assets/G.jpeg";
 
 import "./About.css";
 import Collage from "./Collage";

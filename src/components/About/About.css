@@ -241,7 +241,7 @@ p {
     display: grid;
     max-width: var(--max-width);
     margin: 0 auto;
-    width: 100%;
+    /*width: 100%;*/
     grid-template-columns: repeat(25, 1fr);
     /*grid-row-gap: var(--64px);*/
     grid-row-gap: 0
@@ -250,11 +250,14 @@ p {
 @media (min-width: 992px) {
     .collage-content {
         grid-row-gap: var(--64px);
+        /*width: 85%;*/
+        /*height: 100%;*/
     }
 }
 
 .collage-holder {
     display: contents;
+    overflow: hidden;
     width: 100%;
     background: var(--color-white30);
     color: var(--color-text-bold);
@@ -282,7 +285,8 @@ p {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    object-fit: cover;
+    max-width: inherit;
     /*border-radius: var(--16px);*/
     z-index: var(--zindex-content);
     display: flex;

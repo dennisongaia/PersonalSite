@@ -25,6 +25,7 @@
   --systemFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --monoFont: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", monospace;
   --color-white: hsla(0, 0%, 100%, 1);
+  --color-white70: hsla(0, 0%, 100%, .7);
   --color-white50: hsla(0, 0%, 100%, .5);
   --color-white20: hsla(0, 0%, 100%, .2);
   --color-white30: hsla(0, 0%, 100%, .3);
@@ -122,6 +123,8 @@
   --zindex-top: 100;
   --zindex-nav: 1000;
   --zindex-nav-menu: 1010;
+  --zindex-chat-bot: 1020;
+  --zindex-alert: 1030;
   --zindex-modal: 2000;
   --radius-base: .75rem;
   --shadow-menu: 0px 10px 60px rgba(0, 0, 0, .1)
