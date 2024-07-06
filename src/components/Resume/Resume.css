@@ -1,0 +1,120 @@
+.experience-holder {
+    adding: 0 calc(var(--24px) + 6px) var(--spacing-s);
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: var(--24px);
+    margin: var(--spacing-l) auto 0;
+    max-width: 900px;
+}
+
+.experience-block {
+    border-radius: var(--radius-base);
+    background: var(--color-white30);
+    backdrop-filter: blur(10px) saturate(1.3);
+    -webkit-backdrop-filter: blur(10px) saturate(1.3);
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s var(--transition-ease);
+}
+
+.experience-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--24px);
+    position: relative;
+    gap: var(--14px);
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .experience-inner {
+        padding: var(--42px);
+    }
+}
+
+.experience-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--16px) - 8px);
+    transition: all .2s var(--transition-ease);
+}
+
+.experience-title-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white30);
+    border-radius: var(--radius-base);
+}
+
+.experience-title {
+    font-size: var(--font-h4);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    font-family: var(--titleFont);
+    margin: 3px 0 3px 8px;
+}
+
+.experience-icon {
+    height: 32px;
+    width: 32px;
+    margin: 3px 8px 3px 0;
+    color: var(--color-text-primary);
+    transition: all .2s var(--transition-ease);
+}
+
+.experience-icon:hover {
+    color: var(--color-green450);
+}
+
+.experience-info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--16px);
+    color: var(--color-text-primary);
+    font-weight: 600;
+    font-family: var(--bodyFont);
+}
+
+@media (min-width: 768px) {
+    .experience-info {
+        font-size: var(--font-link);
+    }
+}
+
+.experience-company {}
+
+.experience-date {}
+
+.experience-description {
+    font-family: var(--bodyFont);
+    font-size: var(--16px);
+    line-height: 160%;
+    color: var(--color-text-secondary);
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .experience-description {
+        font-size: var(--font-link);
+    }
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .experience-item {
+        margin-bottom: 16px;
+    }
+}
