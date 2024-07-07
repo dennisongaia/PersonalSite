@@ -46,7 +46,9 @@
   --color-beige: hsla(36, 31%, 90%, 1);
   --color-green300: hsla(159, 42%, 88%, 1);
   --color-green400: hsla(160, 52%, 71%, 1);
+  --color-green450: hsla(165, 60%, 41%, 1);
   --color-green500: hsla(172, 95%, 18%, 1);
+  --color-green500-trans: hsla(172, 95%, 18%, 0.7);
   --color-green600: hsla(171, 15%, 35%, 1);
   --color-green700: hsla(171, 11%, 24%, 1);
   --color-green800: hsla(158, 23%, 18%, 1);
