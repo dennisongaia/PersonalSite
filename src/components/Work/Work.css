@@ -18,7 +18,7 @@
     }
 }
 
-.card {
+.cardd {
     --_background: var(--background, var(--color-red));
     --_color: var(--color, var(--color-beige));
     --_grid-column-start: var(--grid-column-start, 1);
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 992px) {
-    .card {
+    .cardd {
         max-height: 550px;
         border-radius: var(--64px);
         grid-column-start: var(--_grid-column-start);
@@ -49,23 +49,23 @@
 }
 
 @media (min-width: 544px) {
-    .card:hover {
+    .cardd:hover {
         transform:translate3d(0,-3px,0);
         box-shadow: var(--shadow-lg);
         filter: saturate(1.2)
     }
 }
 
-.card:hover .image {
+.cardd:hover .image {
     transform: translateZ(0);
     opacity: 1
 }
 
-.card:hover .card-inner {
+.cardd:hover .card-inner {
     transform: translate3d(0,1rem,0)
 }
 
-.card.tag:active {
+.cardd.tag:active {
     transform: translateZ(0);
     box-shadow: none
 }
