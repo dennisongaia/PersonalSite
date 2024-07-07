@@ -1,5 +1,5 @@
 .experience-holder {
-    adding: 0 calc(var(--24px) + 6px) var(--spacing-s);
+    padding: 0 calc(var(--24px) + 6px) var(--spacing-s);
 }
 
 .experience {
@@ -117,4 +117,99 @@
     .experience-item {
         margin-bottom: 16px;
     }
+}
+
+.resume-skills {
+    margin-top: var(--spacing-l);
+    padding: 0 calc(var(--24px) + 6px) calc(var(--64px)* 2);
+}
+
+.skills-content {
+    display: grid;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: var(--64px);
+}
+
+@media (min-width: 992px) {
+    .skills-content {
+        grid-row-gap: calc(var(--64px)* 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skills-1, .skills-2 {
+    position: relative;
+    transition: all .2s var(--transition-ease);
+    width: 100%;
+}
+
+.skill-wrap {
+    padding: 0 var(--14px);
+    display: flex;
+}
+
+
+.skill-image-wrap {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background: var(--color-white30);
+    transition: all .2s var(--transition-ease);
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-image {
+    object-fit: contain;
+    position: relative;
+    z-index: var(--zindex-content);
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+}
+
+.skill-info-wrap {
+    padding: var(--14px) 0 var(--14px) var(--14px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--16px) - 8px);
+}
+
+.skill-title {
+    font-family: var(--bodyFont);
+    font-size: var(--16px);
+    color: var(--color-text-primary);
+}
+
+@media (min-width: 768px) {
+    .skill-title {
+        font-size: var(--font-link);
+    }
+}
+
+.skill-progress {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-white50);
+    width: 100%;
+    height: 25px;
+    border-radius: var(--radius-base);
+    transform: translateZ(0);
+}
+
+.skill-indicator {
+    background-color: var(--color-green500-trans);
+    width: 100%;
+    height: 100%;
+    transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);
 }
