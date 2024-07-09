@@ -1,5 +1,6 @@
 import './App.css';
-import {navigationData} from "./constants/constants";
+import {navigationData, profileLinks} from "./constants/constants";
+import resume from './assets/resume/Gaia Dennison 2024.pdf';
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import NavBar from "./components/Nav/NavBar";
@@ -33,8 +34,29 @@ function App() {
                 </Routes>
                 </div>
             </main>
-            <footer className="">
-
+            <footer className="footer grid">
+                <ul className="links">
+                    <li className="link-title">
+                        Links
+                    </li>
+                    {profileLinks.map((link) => (
+                        <li className="link-li">
+                            <a href={link.url} className="link">
+                                {link.title}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="resume">
+                    <li className="link-title">
+                        Documents
+                    </li>
+                    <li className="link-li">
+                        <a href={resume} className="link" target="_blank" rel="noopener noreferrer">
+                            Resume
+                        </a>
+                    </li>
+                </ul>
             </footer>
         </>
     );
