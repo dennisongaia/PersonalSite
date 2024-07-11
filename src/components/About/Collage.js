@@ -20,7 +20,7 @@ const Collage = () => {
         <div className="collage">
             <div className="collage-content">
                 {selectedData.map((item, index) => (
-                    <Card className="collage-holder">
+                    <Card className={`collage-holder-${index % 2 === 0 ? '1' : '2'}`}>
                         <Card.Img src={item.image} className="collage-img"/>
                         <div className="caption">{item.location}</div>
                     </Card>

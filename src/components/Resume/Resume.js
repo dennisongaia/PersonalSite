@@ -20,7 +20,7 @@ const Resume = () => {
             <div className="resume-skills">
                 <div className="skills-content">
                     {skills.map((skill, index) => (
-                        <div className={`'skills-'${index % 2 === 0 ? '1' : '2'}`}>
+                        <div className={`skills-${index % 2 === 0 ? '1' : '2'}`}>
                             <Skill skill={skill}/>
                         </div>
                     ))}
