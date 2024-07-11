@@ -310,6 +310,12 @@ p+h3 {
   margin-top: var(--spacing-m)
 }
 
+.footer {
+  padding: var(--spacing-xl) 0 var(--spacing-m);
+  position: relative;
+  z-index: var(--zindex-content-lower-2);
+}
+
 .xs {
   margin-top: var(--spacing-xs)
 }
@@ -371,4 +377,5 @@ p+h3 {
     grid-row-gap:calc(var(--64px) * 2.5)
   }
 }
+
 
