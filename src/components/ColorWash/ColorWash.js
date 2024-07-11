@@ -69,11 +69,12 @@ const ColorWash = () => {
         color: {
           value: [
             "hsla(261, 78.7%, 81.6%, 1)",
-            "hsla(172, 95%, 20%, 0.5)",
-            "hsla(160, 52%, 71%, 0.6)",
+            "hsla(172, 95%, 20%, 1)",
+            "hsla(160, 52%, 71%, 1)",
             "hsla(267, 43%, 44.7%, 1)",
             "hsla(36, 97%, 70%, 1)",
             "hsla(284, 61%, 74%, 1)",
+            "hsla(267, 43%, 44.7%, 1)",
           ],
           animation: {
             h: {
@@ -145,7 +146,7 @@ const ColorWash = () => {
         number: {
           density: { enable: false, width: 1920, height: 1080 },
           limit: { mode: "delete", value: 0 },
-          value: 20,
+          value: 25,
         },
         opacity: {
           value: { min: 0.2, max: 0.3 },
@@ -175,11 +176,11 @@ const ColorWash = () => {
           type: "circle",
         },
         size: {
-          value: { min: 300, max: 400 },
+          value: { min: 200, max: 400 },
           animation: {
             count: 0,
             enable: true,
-            speed: 200,
+            speed: 300,
             decay: 0,
             delay: 0,
             sync: false,
