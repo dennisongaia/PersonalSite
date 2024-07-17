@@ -9,6 +9,11 @@ import coronThree from '../assets/collage/coron_land_three.JPG';
 import catalina from '../assets/collage/catalina_land.JPG';
 import santaBarbaraOne from '../assets/collage/santa_barbara_land.JPG';
 import santaBarbaraTwo from '../assets/collage/santa_barbara_land_two.JPG';
+import vancouverOne from '../assets/collage/vancouver_land.JPG';
+import vancouverTwo from '../assets/collage/vancouver_land_two.JPG';
+import vancouverThree from '../assets/collage/vancouver_land_three.JPG';
+import vancouverFour from '../assets/collage/vancouver_land_four.JPG';
+import vancouverFive from '../assets/collage/vancouver_land_five.JPG';
 
 import aws from '../assets/skills/aws.svg';
 import c from '../assets/skills/cplusplus.svg';
@@ -58,6 +63,26 @@ export const collageData = [
     {
         location: "Santa Barbara, CA",
         image: santaBarbaraTwo
+    },
+    {
+        location: "Vancouver, BC",
+        image: vancouverOne
+    },
+    {
+        location: "Vancouver, BC",
+        image: vancouverTwo
+    },
+    {
+        location: "Vancouver, BC",
+        image: vancouverThree
+    },
+    {
+        location: "Vancouver, BC",
+        image: vancouverFour
+    },
+    {
+        location: "Vancouver, BC",
+        image: vancouverFive
     },
 ]
 export const navigationData = [
