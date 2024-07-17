@@ -65,11 +65,11 @@ export const collageData = [
         image: santaBarbaraTwo
     },
     {
-        location: "Vancouver, BC",
+        location: "Whistler, BC",
         image: vancouverOne
     },
     {
-        location: "Vancouver, BC",
+        location: "Whistler, BC",
         image: vancouverTwo
     },
     {
@@ -111,9 +111,24 @@ export const navigationData = [
 export const bio =
     "Full-stack developer well-versed in Agile/Scrum methodologies, proficient in delivering " +
     "full-life cycle projects, and adept at implementing tailored software solutions using diverse technologies. " +
-    "Consistently delivering high-quality applications/systems that follow clean-code principles and ensure client " +
-    "satisfaction. Extensive experience managing client interactions with strong interpersonal and professional " +
-    "communication skills. Excels in implementing scalable and efficient backend systems, services, and APIs.\n";
+    "\nConsistently delivering high-quality applications/systems that follow clean-code principles and ensure client " +
+    "satisfaction.\nExtensive experience managing client interactions with strong interpersonal and professional " +
+    "communication skills. Excels in implementing scalable and efficient backend systems, services, and APIs.";
+
+export const bioTwo = "Before transitioning to a career in software engineering, I was an environmental science student " +
+    "with a keen interest in understanding and protecting our planet.  It was during this time that I stumbled upon a " +
+    "web programming course and was instantly captivated by the hands-on problem-solving aspect of coding. The ability " +
+    "to create and build something tangible from just limited resources and knowledge was so exciting and rewarding to" +
+    " me.\nNow, I'm passionate about using my technical skills to work on projects that benefit both the environment " +
+    "and society, striving to support sustainability and positive change.\nToday, I am fervently dedicated to leveraging" +
+    " my technical expertise to develop projects that positively impact the environment and humanity. My goal is to" +
+    " contribute to sustainable solutions that mitigate harm and promote a healthier planet for all. Problem-solving" +
+    " and technology are at the heart of what I do, and I am enthusiastic about the opportunity to work on exciting" +
+    " projects, collaborate with talented teams, and learn from seasoned developers.\nOutside of work, you'll find me" +
+    " playing with my dog, hitting the trails for a run or hike, and going to the gym. I also love reading," +
+    " watching movies, and enjoying music festivals with friends. Traveling and experiencing new cultures, foods, and" +
+    " coffee spots is another passion of mine. Recently, I've explored Canada, Northern California, and" +
+    " the Philippines. My next dream destinations are Japan and Spain.";
 
 export const profileLinks = [
     {
