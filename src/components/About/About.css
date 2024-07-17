@@ -8,26 +8,14 @@
 }
 
 .bio {
-    margin-bottom: var(--spacing-l);
-    padding: 0 var(--64px);
-}
-
-@media (min-width: 768px) {
-    .bio {
-        margin-bottom: calc(var(--spacing-l) * 2);
-    }
-}
-
-@media (min-width: 1250px) {
-    .bio {
-        margin-bottom: calc(var(--spacing-l) * 3);
-    }
+    padding: 0 var(--64px) var(--64px);
 }
 
 .person {
     grid-column-start: 1;
     grid-column-end: 26;
     position: relative;
+    align-content: center;
 }
 
 @media (min-width: 768px) {
