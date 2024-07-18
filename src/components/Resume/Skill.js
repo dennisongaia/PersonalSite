@@ -7,12 +7,12 @@ const Skill = ({skill}) => {
     React.useEffect(() => {
         const timer = setTimeout(() => setProgress(100 - skill.percent), 500);
         return () => clearTimeout(timer);
-    }, []);
+    }, );
 
     return (
         <div className="skill-wrap">
             <div className="skill-image-wrap">
-                <img src={skill.image} className="skill-image"/>
+                <img alt={skill.skill} src={skill.image} className="skill-image"/>
             </div>
             <div className="skill-info-wrap">
                 <div className="skill-title">
