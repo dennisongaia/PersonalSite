@@ -21,7 +21,7 @@ const EmailForm = ({setOpen, setToastOpen, setDescription, setTitle}) => {
                 setToastOpen(false);
             });
         } else {
-            const res = await fetch('http://localhost:8000/verify', {
+            const res = await fetch('http://gaiadennison/verify', {
                 method: 'POST',
                 body: JSON.stringify({captchaValue}),
                 headers: {
