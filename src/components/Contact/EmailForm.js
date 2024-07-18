@@ -21,7 +21,9 @@ const EmailForm = ({setOpen, setToastOpen, setDescription, setTitle}) => {
                 setToastOpen(false);
             });
         } else {
-            const res = await fetch('http://gaiadennison/verify', {
+            const currentUrl = window.location.origin;
+            const verifyUrl = `${currentUrl}/verify`;
+            const res = await fetch(verifyUrl,  {
                 method: 'POST',
                 body: JSON.stringify({captchaValue}),
                 headers: {

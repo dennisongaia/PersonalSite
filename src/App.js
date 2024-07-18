@@ -2,7 +2,7 @@ import './App.css'
 import {navigationData, profileLinks} from './constants/constants'
 import resume from './assets/resume/Gaia Dennison 2024.pdf';
 
-import {BrowserRouter as Router, Route, Routes, useLocation} from 'react-router-dom'
+import {HashRouter as Router, Route, Routes, useLocation} from 'react-router-dom'
 import {AnimatePresence} from 'framer-motion'
 import NavBar from './components/Nav/NavBar'
 import ColorWash from './components/ColorWash/ColorWash'
