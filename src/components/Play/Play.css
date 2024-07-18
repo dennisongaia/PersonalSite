@@ -1,0 +1,98 @@
+.CanvasWrapper {
+    display: flex;
+    margin: var(--64px) var(--24px);
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .CanvasWrapper {
+        margin: var(--64px);
+    }
+}
+
+.ButtonWrapper {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .ButtonWrapper {
+        justify-content: start;
+        margin-bottom: var(--14px);
+        gap: 3px;
+    }
+}
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    padding: calc(var(--16px) - 10px) calc(var(--16px) - 6px);
+    margin: 0 3px;
+    flex: 0;
+    border-radius: var(--16px);
+    background-color: var(--color-white70);
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: var(--color-white30);
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.Button:focus {
+    background-color: var(--color-white30);
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.Active {
+    background-color: var(--color-white30);
+    box-shadow: 0 0 0 2px var(--color-white);
+}
+
+.ColorWrapper {
+    border-radius: var(--radius-base);
+    display: flex;
+    align-items: center;
+    flex: 0;
+    margin: 0 3px;
+    width: 62px;
+}
+
+.Color {
+    border-radius: 100%;
+    width: var(--24px);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.Icon {
+    width: var(--16px);
+    height: var(--16px);
+    color: var(--color-text-primary);
+}
+
+@media (min-width: 768px) {
+    .Icon {
+        width: var(--20px);
+        height: var(--20px);
+    }
+
+    .Color {
+        width: 2rem;
+    }
+}
+
+.Canvas {
+    width: 100%;
+    height: 80vh;
+    max-height: 850px;
+    border-radius: var(--16px);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+    .Canvas {
+        height: 90vh;
+    }
+}
