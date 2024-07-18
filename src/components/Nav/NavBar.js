@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import './NavBar.css';
-import {navigationData} from "../../constants/constants";
-import {Link, useLocation} from "react-router-dom";
+import React, {useEffect, useState} from 'react'
+import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import './NavBar.css'
+import {navigationData} from '../../constants/constants'
+import {Link, useLocation} from 'react-router-dom'
 
 const NavigationMenuDemo = () => {
     const location = useLocation();
@@ -41,9 +41,10 @@ const NavigationMenuDemo = () => {
                         onClick={() => setActivePath(item.path)}
                     >
                         <NavigationMenu.Trigger className="NavigationMenuTrigger">
-                           <Link to={item.path} className={`NavigationMenuLink ${activePath === item.path ? 'active' : ''}`}>
-                               {item.title}
-                           </Link>
+                            <Link to={item.path}
+                                  className={`NavigationMenuLink ${activePath === item.path ? 'active' : ''}`}>
+                                {item.title}
+                            </Link>
                         </NavigationMenu.Trigger>
 
                     </NavigationMenu.Item>

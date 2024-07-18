@@ -1,7 +1,6 @@
 import About from "../components/About/About";
 import Resume from "../components/Resume/Resume";
 import Work from "../components/Work/Work";
-import Play from "../components/Play/Play";
 
 import coronOne from '../assets/collage/coron_land.JPG';
 import coronTwo from '../assets/collage/coron_land_two.JPG';
@@ -34,10 +33,7 @@ import spring from '../assets/skills/spring.svg';
 import tailwind from '../assets/skills/tw.svg';
 import typescript from '../assets/skills/typescript.svg';
 
-import {
-    LinkedInLogoIcon,
-    GitHubLogoIcon,
- } from "@radix-ui/react-icons";
+import {GitHubLogoIcon, LinkedInLogoIcon,} from "@radix-ui/react-icons";
 
 export const collageData = [
     {
@@ -134,12 +130,12 @@ export const profileLinks = [
     {
         title: "GitHub",
         url: "https://github.com/dennisongaia",
-        icon: <GitHubLogoIcon />,
+        icon: <GitHubLogoIcon/>,
     },
     {
         title: "LinkedIn",
         url: "https://www.linkedin.com/in/gaiadennison",
-        icon: <LinkedInLogoIcon />,
+        icon: <LinkedInLogoIcon/>,
     },
 ];
 

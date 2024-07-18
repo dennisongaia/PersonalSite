@@ -1,11 +1,11 @@
 span.gaia-title {
     position: relative;
-    z-index: 10
+    z-index: 10;
 }
 
 @media (min-width: 768px) {
     span.gaia-title {
-        display:block
+        display:block;
     }
 }
 
@@ -26,8 +26,8 @@ h2.gaia-title {
 }
 
 .stars.left.gaia-title {
-    left: -3rem;
-    bottom: -5rem;
+    left: 2rem;
+    top: -7rem
 }
 
 .stars.right.gaia-title {

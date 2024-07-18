@@ -1,7 +1,7 @@
 import React from 'react'
-import * as Toast from '@radix-ui/react-toast';
+import * as Toast from '@radix-ui/react-toast'
 
-const EmailConfirmation = ({ toastOpen, setToastOpen, description, title }) => {
+const EmailConfirmation = ({toastOpen, setToastOpen, description, title}) => {
 
     return (
         <Toast.Provider swipeDirection="right">
@@ -13,7 +13,7 @@ const EmailConfirmation = ({ toastOpen, setToastOpen, description, title }) => {
                     </div>
                 </Toast.Description>
             </Toast.Root>
-            <Toast.Viewport className="ToastViewport" />
+            <Toast.Viewport className="ToastViewport"/>
         </Toast.Provider>
     )
 }

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import * as Collapsible from "@radix-ui/react-collapsible";
-import {ChevronDownIcon, ChevronUpIcon} from "@radix-ui/react-icons";
+import * as Collapsible from '@radix-ui/react-collapsible'
+import {ChevronDownIcon, ChevronUpIcon} from '@radix-ui/react-icons'
 
 const Experience = ({item}) => {
     const [open, setOpen] = useState(false);
@@ -17,7 +17,8 @@ const Experience = ({item}) => {
                                 </div>
                                 <Collapsible.Trigger asChild>
                                     <button>
-                                        {open ? (<ChevronUpIcon className="experience-icon"/>) : (<ChevronDownIcon className="experience-icon"/>)}
+                                        {open ? (<ChevronUpIcon className="experience-icon"/>) : (
+                                            <ChevronDownIcon className="experience-icon"/>)}
                                     </button>
                                 </Collapsible.Trigger>
                             </div>
@@ -32,7 +33,8 @@ const Experience = ({item}) => {
                             <Collapsible.Content>
                                 <ul className="experience-description">
                                     {item.description.split('\n').map((line, index) => (
-                                        <li className="experience-item" key={index} style={{ marginLeft: line.startsWith('\t') ? '20px' : '0' }}>
+                                        <li className="experience-item" key={index}
+                                            style={{marginLeft: line.startsWith('\t') ? '20px' : '0'}}>
                                             {line.startsWith('\t') ? line.substring(1) : line}
                                         </li>
                                     ))}

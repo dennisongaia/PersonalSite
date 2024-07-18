@@ -1,7 +1,7 @@
 import React from 'react'
-import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card'
 
-import {collageData} from "../../constants/constants";
+import {collageData} from '../../constants/constants'
 
 const getRandomIndices = (length, count) => {
     const indices = new Set();

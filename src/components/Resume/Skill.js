@@ -1,7 +1,7 @@
 import React from 'react'
-import * as Progress from '@radix-ui/react-progress';
+import * as Progress from '@radix-ui/react-progress'
 
-const Skill = ({ skill }) => {
+const Skill = ({skill}) => {
     const [progress, setProgress] = React.useState(skill.percent);
 
     React.useEffect(() => {
@@ -21,7 +21,7 @@ const Skill = ({ skill }) => {
                 <Progress.Root className="skill-progress" value={progress}>
                     <Progress.Indicator
                         className="skill-indicator"
-                        style={{ transform: `translateX(-${100 - progress}%)` }}
+                        style={{transform: `translateX(-${100 - progress}%)`}}
                     />
                 </Progress.Root>
             </div>

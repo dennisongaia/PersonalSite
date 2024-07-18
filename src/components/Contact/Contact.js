@@ -1,10 +1,10 @@
 import React from 'react'
 import ChatBot from 'react-simple-chatbot'
-import { ThemeProvider } from 'styled-components'
+import {ThemeProvider} from 'styled-components'
 
 import avatar from '../../assets/avatar.jpeg'
 import './Contact.css'
-import EmailAlert from "./EmailAlert";
+import EmailAlert from './EmailAlert'
 
 const theme = {
     background: 'hsla(0, 0%, 100%, .3)',
@@ -47,8 +47,8 @@ const steps = [
     {
         id: '5',
         options: [
-            { value: 1, label: "Just saying hi!", trigger: '6' },
-            { value: 2, label: "We'd like to hire you", trigger: '7' },
+            {value: 1, label: "Just saying hi!", trigger: '6'},
+            {value: 2, label: "We'd like to hire you", trigger: '7'},
             // { value: 3, label: "I don't need any more help", trigger: '8' },
         ],
     },
@@ -90,7 +90,7 @@ const Contact = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <ChatBot className="CustomChatBot" steps={steps} headerTitle="GaiaBot" floating={true} botAvatar={avatar} />
+            <ChatBot className="CustomChatBot" steps={steps} headerTitle="GaiaBot" floating={true} botAvatar={avatar}/>
         </ThemeProvider>
     )
 }
