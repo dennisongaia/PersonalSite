@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import Play from "../components/Play/Play";
 import Resume from "../components/Resume/Resume";
 import Work from "../components/Work/Work";
 
@@ -116,7 +117,7 @@ export const bioTwo = "Before transitioning to a career in software engineering,
     "web programming course and was instantly captivated by the hands-on problem-solving aspect of coding. The ability " +
     "to create and build something tangible from just limited resources and knowledge was so exciting and rewarding to" +
     " me.\nNow, I'm passionate about using my technical skills to work on projects that benefit both the environment " +
-    "and society, striving to support sustainability and positive change.\nToday, I am fervently dedicated to leveraging" +
+    "and society, striving to support sustainability and positive change.\nToday, I am dedicated to leveraging" +
     " my technical expertise to develop projects that positively impact the environment and humanity. My goal is to" +
     " contribute to sustainable solutions that mitigate harm and promote a healthier planet for all. Problem-solving" +
     " and technology are at the heart of what I do, and I am enthusiastic about the opportunity to work on exciting" +
