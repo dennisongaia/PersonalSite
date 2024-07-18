@@ -3,6 +3,7 @@
     -webkit-backdrop-filter: blur(40px) saturate(1.3);
     box-shadow: var(--shadow-lg);
     z-index: var(--zindex-chat-bot);
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .AlertDialogOverlay {
@@ -32,7 +33,7 @@
 }
 
 .AlertDialogContent {
-    background-color: var(--color-white50);
+    background-color: var(--color-white30);
     backdrop-filter: blur(40px) saturate(1.3);
     -webkit-backdrop-filter: blur(40px) saturate(1.3);
     z-index: var(--zindex-alert);
@@ -47,6 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 @media (min-width: 768px) {
@@ -178,7 +180,7 @@
 
 .Textarea {
     resize: none;
-    padding: 10px;
+    padding: 0 10px;
     font-size: var(--16px);
     color: var(--color-text-secondary);
 }
@@ -193,12 +195,20 @@
     }
 }
 
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px var(--14px);
+    z-index: var(--zindex-recap);
+}
+
 .Button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-base);
-    padding: 0 15px;
+    padding: var(--14px) 4px;
+    margin-bottom: var(--14px);
     font-size: var(--16px);
     color: var(--color-text-primary);
     line-height: 1;

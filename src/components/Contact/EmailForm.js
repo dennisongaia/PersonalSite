@@ -1,60 +1,66 @@
 import React, {useRef} from 'react'
 import * as Form from '@radix-ui/react-form'
 import emailjs from '@emailjs/browser'
-import {PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID} from '../../constants/keys'
+import ReCAPTCHA from 'react-google-recaptcha'
+import {APP_SITE_KEY, PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID} from '../../constants/keys'
 
 const wait = () => new Promise((resolve) => setTimeout(resolve, 4000));
 
 const EmailForm = ({setOpen, setToastOpen, setDescription, setTitle}) => {
     const form = useRef()
-    // const recaptcha = useRef()
+    const recaptcha = useRef()
 
     const sendEmail = async (e) => {
         e.preventDefault();
-        // console.log('captcha', recaptcha.current.getValue())
-        // const captchaValue = recaptcha.current.getValue()
-        // if (!captchaValue) {
-        //     alert('Please verify the reCAPTCHA!')
-        // } else {
-        //     const res = await fetch('http://localhost:8000/verify', {
-        //         method: 'POST',
-        //         body: JSON.stringify({ captchaValue }),
-        //         headers: {
-        //             'content-type': 'application/json',
-        //         },
-        //     })
-        //     const data = await res.json()
-        //     if (data.success) {
-        //         // make form submission
-        //         alert('Form submission successful!')
-        //     } else {
-        //         alert('reCAPTCHA validation failed!')
-        //     }
-        // }
-        // wait().then(() => setOpen(false));
-
-        emailjs
-            .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
-                publicKey: PUBLIC_KEY,
+        const captchaValue = recaptcha.current.getValue()
+        if (!captchaValue) {
+            setTitle("Alert")
+            setDescription("Please verify the reCAPTCHA")
+            setToastOpen(true)
+            wait().then(() => {
+                setToastOpen(false);
+            });
+        } else {
+            const res = await fetch('http://localhost:8000/verify', {
+                method: 'POST',
+                body: JSON.stringify({captchaValue}),
+                headers: {
+                    'content-type': 'application/json',
+                },
             })
-            .then(
-                () => {
-                    setTitle("Success")
-                    setDescription('Email sent successfully')
-                    setToastOpen(true)
-                },
-                (error) => {
-                    setTitle("Error")
-                    setDescription("Email failed to send")
-                    console.log(error.text)
-                    setToastOpen(true)
-                },
-            );
+            const data = await res.json()
+            if (data.success) {
+                emailjs
+                    .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+                        publicKey: PUBLIC_KEY,
+                    })
+                    .then(
+                        () => {
+                            setTitle("Success")
+                            setDescription('Email sent successfully')
+                            setToastOpen(true)
+                        },
+                        (error) => {
+                            setTitle("Error")
+                            setDescription("Email failed to send")
+                            console.log(error.text)
+                            setToastOpen(true)
+                        },
+                    );
 
-        wait().then(() => {
-            setToastOpen(false);
-            setOpen(false)
-        });
+                wait().then(() => {
+                    setToastOpen(false);
+                    setOpen(false)
+                });
+            } else {
+                setTitle("Error")
+                setDescription("reCAPTCHA validation failed")
+                setToastOpen(true)
+                wait().then(() => {
+                    setToastOpen(false);
+                });
+            }
+        }
     };
 
     return (
@@ -109,13 +115,15 @@ const EmailForm = ({setOpen, setToastOpen, setDescription, setTitle}) => {
                         <textarea className="Textarea" required name="message" placeholder="Message"/>
                     </Form.Control>
                 </Form.Field>
-                {/*<ReCAPTCHA ref={recaptcha} sitekey={process.env.REACT_APP_SITE_KEY} />*/}
+                <div className="recaptcha-container">
+                    <ReCAPTCHA ref={recaptcha} sitekey={APP_SITE_KEY}/>
+                </div>
                 <Form.Submit asChild>
-                    <button className="Button" style={{marginTop: 10}}>
+                    <button className="Button">
                         Send
                     </button>
                 </Form.Submit>
-                <button className="Button" style={{marginTop: 10}} onClick={() => setOpen(false)}>
+                <button className="Button" onClick={() => setOpen(false)}>
                     Cancel
                 </button>
             </Form.Root>

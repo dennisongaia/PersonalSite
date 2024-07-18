@@ -127,6 +127,7 @@
   --zindex-nav-menu: 1010;
   --zindex-chat-bot: 1020;
   --zindex-alert: 1030;
+  --zindex-recap: 1040;
   --zindex-modal: 2000;
   --radius-base: .75rem;
   --shadow-menu: 0px 10px 60px rgba(0, 0, 0, .1)
