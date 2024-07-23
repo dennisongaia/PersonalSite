@@ -61,18 +61,18 @@ const ColorWash = () => {
                     absorb: {speed: 2},
                     bounce: {horizontal: {value: 1}, vertical: {value: 1}},
                     enable: false,
-                    maxSpeed: 50,
+                    maxSpeed: 60,
                     mode: "bounce",
                     overlap: {enable: true, retries: 0},
                 },
                 color: {
                     value: [
-                        "hsla(261, 78.7%, 81.6%, 0.3)",
-                        "hsla(172, 95%, 20%, 0.5)",
-                        "hsla(160, 52%, 71%, 0.4)",
-                        "hsla(267, 43%, 44.7%, 0.3)",
-                        "hsla(36, 97%, 70%, 0.3)",
-                        "hsla(284, 61%, 74%, 0.3)",
+                        "hsla(261, 78.7%, 81.6%, 0.5)",
+                        "hsla(172, 95%, 20%, 0.2)",
+                        "hsla(160, 52%, 71%, 0.5)",
+                        "hsla(267, 43%, 44.7%, 0.5)",
+                        "hsla(36, 97%, 70%, 0.5)",
+                        "hsla(284, 61%, 74%, 0.5)",
                     ],
                     animation: {
                         h: {
@@ -147,7 +147,7 @@ const ColorWash = () => {
                     value: 25,
                 },
                 opacity: {
-                    value: {min: 0.2, max: 0.22},
+                    value: {min: 0.35, max: 0.4},
                     animation: {
                         count: 0,
                         enable: false,
