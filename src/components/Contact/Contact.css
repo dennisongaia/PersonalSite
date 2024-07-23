@@ -195,11 +195,8 @@
     }
 }
 
-.recaptcha-container {
-    display: flex;
-    justify-content: center;
-    margin: 10px 10px var(--14px);
-    z-index: var(--zindex-recap);
+.grecaptcha-badge {
+    visibility: hidden;
 }
 
 .Button {
