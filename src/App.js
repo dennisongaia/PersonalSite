@@ -41,6 +41,21 @@ function App() {
                 </div>
             </main>
             <footer className="footer grid">
+                <ul className="recaptcha-links">
+                    <li className="recaptcha-title">
+                        This site uses Google reCAPTCHA v3
+                    </li>
+                    <li className="link-li">
+                        <a href="https://policies.google.com/privacy" className="link">
+                            Privacy
+                        </a>
+                    </li>
+                    <li className="link-li">
+                        <a href="https://policies.google.com/terms" className="link">
+                            Terms
+                        </a>
+                    </li>
+                </ul>
                 <ul className="links">
                     <li className="link-title">
                         Links

@@ -1,3 +1,41 @@
+.recaptcha-links {
+    grid-column-start: 3;
+    grid-column-end: 24;
+    padding: 0;
+    list-style-type: none;
+    margin: var(--spacing-l) 0 0;
+
+}
+
+@media (min-width: 768px) {
+    .recaptcha-links {
+        grid-column-start: 5;
+        grid-column-end: 15;
+        margin: 0;
+    }
+}
+
+/*.recaptcha-title {*/
+/*    color: var(--color-text-secondary);*/
+/*    font-size: var(--font-link);*/
+/*    position: relative;*/
+/*}*/
+
+.recaptcha-title {
+    font-family: var(--bodyFont);
+    font-size: var(--font-link);
+    margin: 0 0 calc(var(--spacing-xs) - 10px);
+    letter-spacing: -.25px;
+    font-weight: 600;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .recaptcha-title {
+        letter-spacing: 0;
+    }
+}
+
 .links {
     grid-column-start: 4;
     grid-column-end: 12;
