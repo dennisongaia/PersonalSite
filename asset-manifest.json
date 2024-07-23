@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.002da115.css",
-    "main.js": "/static/js/main.b4fc6451.js",
+    "main.css": "/static/css/main.8e544908.css",
+    "main.js": "/static/js/main.cb8f193a.js",
     "static/media/game-3.gif": "/static/media/game-3.a7c9557c2299930121c9.gif",
     "static/media/coron_land_two.JPG": "/static/media/coron_land_two.829e6a4c0eeefc0721d0.JPG",
     "static/media/santa_barbara_land.JPG": "/static/media/santa_barbara_land.de510b5a74f8c543213f.JPG",
@@ -42,11 +42,11 @@
     "static/media/tw.svg": "/static/media/tw.78c92cee54f7e897c18b939b258e181c.svg",
     "index.html": "/index.html",
     "static/media/star-1.svg": "/static/media/star-1.2ed621120328d4c3ae7bfaa04f279595.svg",
-    "main.002da115.css.map": "/static/css/main.002da115.css.map",
-    "main.b4fc6451.js.map": "/static/js/main.b4fc6451.js.map"
+    "main.8e544908.css.map": "/static/css/main.8e544908.css.map",
+    "main.cb8f193a.js.map": "/static/js/main.cb8f193a.js.map"
   },
   "entrypoints": [
-    "static/css/main.002da115.css",
-    "static/js/main.b4fc6451.js"
+    "static/css/main.8e544908.css",
+    "static/js/main.cb8f193a.js"
   ]
 }
