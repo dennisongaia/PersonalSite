@@ -67,12 +67,13 @@ const ColorWash = () => {
                 },
                 color: {
                     value: [
-                        "hsla(261, 78.7%, 81.6%, 0.5)",
-                        "hsla(172, 95%, 20%, 0.2)",
-                        "hsla(160, 52%, 71%, 0.5)",
-                        "hsla(267, 43%, 44.7%, 0.5)",
-                        "hsla(36, 97%, 70%, 0.5)",
-                        "hsla(284, 61%, 74%, 0.5)",
+                        "hsla(261, 78.7%, 81.6%, 1)",
+                        // "hsla(172, 95%, 20%, 0.2)",
+                        "hsla(160, 52%, 71%, 0.9)",
+                        "hsla(267, 43%, 44.7%, 1)",
+                        "hsla(110, 52%, 71%, 0.8)",
+                        "hsla(36, 97%, 70%, 1)",
+                        "hsla(267, 43%, 44.7%, 1)",
                     ],
                     animation: {
                         h: {
@@ -147,7 +148,7 @@ const ColorWash = () => {
                     value: 25,
                 },
                 opacity: {
-                    value: {min: 0.35, max: 0.4},
+                    value: {min: 0.5, max: 0.6},
                     animation: {
                         count: 0,
                         enable: false,
@@ -174,7 +175,7 @@ const ColorWash = () => {
                     type: "circle",
                 },
                 size: {
-                    value: {min: 500, max: 800},
+                    value: {min: 400, max: 700},
                     animation: {
                         count: 0,
                         enable: true,
