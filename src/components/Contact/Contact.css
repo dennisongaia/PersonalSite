@@ -183,6 +183,7 @@
     padding: 0 10px;
     font-size: var(--16px);
     color: var(--color-text-secondary);
+    margin-bottom: var(--14px);
 }
 
 @media (min-width: 768px) {
