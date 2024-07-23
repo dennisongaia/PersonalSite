@@ -19,13 +19,13 @@ const Abilities = () => {
                         the applications.</p>
                 </div>
                 <div className="ability-3">
-                    <h3>Software Testing & Quality Assurance</h3>
+                    <h3>Software Testing</h3>
                     <p>Ensuring the quality and reliability of software is a critical part of my development process.
                         I conduct thorough testing, both manually and through automated tools, to identify and resolve
                         issues early.</p>
                 </div>
                 <div className="ability-4">
-                    <h3>Client Interaction </h3>
+                    <h3>Client Interaction</h3>
                     <p>I excel in managing client relationships, understanding their unique needs, and maintaining
                         clear and professional communication. My strong interpersonal skills enable me to facilitate
                         effective interactions, ensuring that client expectations are met and often exceeded. </p>
