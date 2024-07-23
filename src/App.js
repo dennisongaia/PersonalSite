@@ -78,6 +78,16 @@ function App() {
                         </a>
                     </li>
                 </ul>
+                <ul className="inspire">
+                    <li className="link-title">
+                        Inspiration
+                    </li>
+                    <li className="link-li">
+                        <a href="https://www.seanhalpin.xyz/" className="link" target="_blank" rel="noopener noreferrer">
+                            Sean Haplin
+                        </a>
+                    </li>
+                </ul>
             </footer>
         </>
     );
