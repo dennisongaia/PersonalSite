@@ -172,7 +172,7 @@ const ColorWash = () => {
                     type: "circle",
                 },
                 size: {
-                    value: {min: 400, max: 700},
+                    value: {min: 400, max: 500},
                     animation: {
                         count: 0,
                         enable: true,
