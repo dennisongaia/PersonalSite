@@ -78,7 +78,7 @@ const Work = () => {
                                 </a>
                             </div>
                             <div style={mintStyle}>
-                                <div href="https://github.com/ai-hackathon-team-23/plot-ai" className="cardd">
+                                <a href="https://github.com/ai-hackathon-team-23/plot-ai" className="cardd">
                                     <div className="card-wrap tag">
                                         <div className="card-info tag">
                                     <span className="card-title tag">
@@ -97,10 +97,10 @@ const Work = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div style={rustStyle}>
-                                <div href="https://github.com/AndyCChen/Downtown-Delivery" className="cardd">
+                                <a href="https://github.com/AndyCChen/Downtown-Delivery" className="cardd">
                                     <div className="card-wrap tag">
                                         <div className="card-info tag">
                                     <span className="card-title tag">
@@ -119,10 +119,10 @@ const Work = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div style={blueStyle}>
-                                <div href="https://github.com/optimization-for-data-driven-science/RIFLE"
+                                <a href="https://github.com/optimization-for-data-driven-science/RIFLE"
                                      className="cardd">
                                     <div className="card-wrap tag">
                                         <div className="card-info tag">
@@ -142,7 +142,7 @@ const Work = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
